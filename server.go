@@ -32,7 +32,7 @@ func generateRtcToken(int_uid uint32, channelName string, role rtctokenbuilder.R
 	appCertificate := os.Getenv("APPCERTIFICATE")
 	// Number of seconds after which the token expires.
 	// For demonstration purposes the expiry time is set to 40 seconds. This shows you the automatic token renew actions of the client.
-	expireTimeInSeconds := uint32(4000)
+	expireTimeInSeconds := uint32(8600000)
 	// Get current timestamp.
 	currentTimestamp := uint32(time.Now().UTC().Unix())
 	// Timestamp when the token expires.
